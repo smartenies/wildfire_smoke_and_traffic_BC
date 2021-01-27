@@ -5,7 +5,7 @@
 #' Contact: smarte4@illinois.edu
 #' 
 #' Description:
-#' Conduct a simulation to see if exposure misclassification could influence 
+#' Conduct a simulation to see if exposure error due to WFS could influence 
 #' exposure response coefficients
 #' =============================================================================
 
@@ -15,7 +15,7 @@ library(lubridate)
 library(readxl)
 
 #' -----------------------------------------------------------------------------
-#' Read in the dataset
+#' Read in the data set
 #' -----------------------------------------------------------------------------
 
 lur_data2 <- read_csv(here::here("data", "Paired_Longterm_BC.csv"))
