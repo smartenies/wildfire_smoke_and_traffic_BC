@@ -157,13 +157,13 @@ for(j in 1:length(true_beta_list)) {
 #' Save simulation results
 #' -----------------------------------------------------------------------------
 
-write_csv(beta_df, here::here("results", "Beta_Simulation_Study_Linear.csv"))
+#write_csv(beta_df, here::here("results", "Beta_Simulation_Study_Linear.csv"))
 
 #' -----------------------------------------------------------------------------
 #' Compare distributions
 #' -----------------------------------------------------------------------------
 
-beta_df <- read_csv(here::here("results", "Beta_Simulation_Study_Linear.csv"))
+#beta_df <- read_csv(here::here("results", "Beta_Simulation_Study_Linear.csv"))
 true_beta_list <- c(0, -5, -10, -20, -50) 
 
 beta_df_0 <- filter(beta_df, true_beta == true_beta_list[1])
@@ -243,5 +243,5 @@ beta_summary <- beta_df %>%
   arrange(desc(true_beta))
 beta_summary
 
-write_csv(beta_summary, here::here("results", "Simulation_Diagnostics_Linear.csv"))
+#write_csv(beta_summary, here::here("results", "Simulation_Diagnostics_Linear.csv"))
 
